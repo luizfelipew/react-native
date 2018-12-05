@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import Simples from './componentes/Simples'
+import ParImpar from './componentes/Parimpar'
 
 
 export default class App extends Component {
@@ -8,6 +9,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Simples texto='Flexivel!!!!'/>
+        <ParImpar numero={33}/>
       </View>
     )
   }
