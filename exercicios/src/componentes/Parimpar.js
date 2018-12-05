@@ -13,19 +13,18 @@ function parOuImpar(num){
     return <Text style={Padrao.ex}>{v}</Text> 
 }
 
-// {parOuImpar(props.numero)}
-//         {
-//             // props.numero % 2 == 0
-//             // ? <Text style={Padrao.ex}>Par</Text>
-//             // : <Text style={Padrao.ex}>Impar</Text>
-//         }
-
+// <If test={props.numero % 2 == 0}>
+//             <Text style={Padrao.ex}>Par</Text>
+//         </If>
+//         <If test={props.numero % 2 == 1}>
+//             <Text style={Padrao.ex}>Impar</Text>
+//         </If>   
 export default props => 
     <View>
-        <If test={props.numero % 2 == 0}>
-            <Text style={Padrao.ex}>Par</Text>
-        </If>
-        <If test={props.numero % 2 == 1}>
-            <Text style={Padrao.ex}>Impar</Text>
-        </If>           
+        {parOuImpar(props.numero)}
+            {
+                // props.numero % 2 == 0
+                // ? <Text style={Padrao.ex}>Par</Text>
+                // : <Text style={Padrao.ex}>Impar</Text>
+            }                
     </View>
